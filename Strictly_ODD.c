@@ -3,18 +3,19 @@ int main()
 {
     int n,i,c=0,d=0;
     scanf("%d",&n);
-    int a[n];
-    for(i=0;i<n;i++)
+    int king[n];
+    for(i=0;i<=n;i++)
     {
-        scanf("%d",&a[i]);
-        if(a[i]%2==1)
-        {
-            d++;
-            if(i%2==1)
-        {
-            c++;
-        }
-        }
+        scanf("%d",&king[i]);
+    
+       if(king[i]%2==1)
+       {
+           d++;
+           if(i%2==1)
+       {
+           c++;
+       }
+       }
     }
     if(c==d)
     {
