@@ -1,17 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
-	int x, y, res;
-	scanf("%d %d", &x, &y);
-	res = (x > y) ? x : y;
-
-	while (1) 
-	{
-		if (res % x == 0 && res % y == 0) 
-		{
-		    printf("%d",res);
-			break;
-		}
-		res++;
-	}
+    int a,b,c,max,i;
+    scanf("%d%d",&a,&b);
+    if(a>b)
+    max=a;
+    else
+    max=b;
+    if(b%a==0)
+    {
+        printf("%d",max);
+    }
+    else
+    {
+        for(i=max;;i++)
+        {
+            if(i%a==0 && i%b==0)
+           {
+               printf("%d",i);
+               break;
+           }
+        }
+    }
 }
